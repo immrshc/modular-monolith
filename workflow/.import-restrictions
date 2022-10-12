@@ -1,0 +1,9 @@
+rules:
+  - selectorRegexp: github.com/immrshch/modular-monolith
+    allowedPrefixes:
+      - github.com/immrshch/modular-monolith/workflow
+      - github.com/immrshch/modular-monolith/proto/workflow
+#      - github.com/immrshch/modular-monolith/transfer/adapter/boundary
+    forbiddenPrefixes:
+      - github.com/immrshch/modular-monolith/transfer
+      - github.com/immrshch/modular-monolith/registration
