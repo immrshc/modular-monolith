@@ -1,4 +1,4 @@
-module github.com/immrshch/modular-monolith
+module github.com/immrshc/modular-monolith
 
 go 1.19
 

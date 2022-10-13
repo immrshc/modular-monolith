@@ -2,7 +2,7 @@ package usecase
 
 import (
 	"context"
-	"github.com/immrshch/modular-monolith/workflow/usecase/port"
+	"github.com/immrshc/modular-monolith/workflow/usecase/port"
 )
 
 type TransferApplication struct {

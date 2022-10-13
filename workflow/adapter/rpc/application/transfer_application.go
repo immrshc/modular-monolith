@@ -4,8 +4,8 @@ import (
 	"context"
 	"log"
 
-	"github.com/immrshch/modular-monolith/proto/workflow"
-	"github.com/immrshch/modular-monolith/workflow/usecase/port"
+	"github.com/immrshc/modular-monolith/proto/workflow"
+	"github.com/immrshc/modular-monolith/workflow/usecase/port"
 )
 
 type Server struct {

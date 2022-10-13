@@ -9,12 +9,12 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 
-	"github.com/immrshch/modular-monolith/proto/workflow"
-	"github.com/immrshch/modular-monolith/transfer/adapter/boundary"
-	tu "github.com/immrshch/modular-monolith/transfer/usecase"
-	"github.com/immrshch/modular-monolith/workflow/adapter/rpc/application"
-	"github.com/immrshch/modular-monolith/workflow/adapter/transfer"
-	wu "github.com/immrshch/modular-monolith/workflow/usecase"
+	"github.com/immrshc/modular-monolith/proto/workflow"
+	"github.com/immrshc/modular-monolith/transfer/adapter/boundary"
+	tu "github.com/immrshc/modular-monolith/transfer/usecase"
+	"github.com/immrshc/modular-monolith/workflow/adapter/rpc/application"
+	"github.com/immrshc/modular-monolith/workflow/adapter/transfer"
+	wu "github.com/immrshc/modular-monolith/workflow/usecase"
 )
 
 var (

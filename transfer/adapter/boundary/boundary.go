@@ -2,7 +2,7 @@ package boundary
 
 import (
 	"context"
-	"github.com/immrshch/modular-monolith/transfer/usecase/port"
+	"github.com/immrshc/modular-monolith/transfer/usecase/port"
 )
 
 type Transfer interface {

@@ -3,7 +3,7 @@ package transfer
 import (
 	"context"
 
-	"github.com/immrshch/modular-monolith/transfer/adapter/boundary"
+	"github.com/immrshc/modular-monolith/transfer/adapter/boundary"
 )
 
 type Client struct {
