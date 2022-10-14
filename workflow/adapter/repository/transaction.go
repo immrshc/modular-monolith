@@ -10,7 +10,7 @@ import (
 
 type TxExecutor struct {
 	//tx *sql.Tx
-	tx interface{}
+	tx  interface{}
 	tcb *transfer.ClientBuilder
 	rcb *registration.ClientBuilder
 }
@@ -19,9 +19,9 @@ func NewTxExecutor(tx interface{}, tcb *transfer.ClientBuilder, rcb *registratio
 	return &TxExecutor{tx: tx, tcb: tcb, rcb: rcb}
 }
 
-func (te *TxExecutor) ExecApplicationTx(
+func (te *TxExecutor) ExecTx(
 	ctx context.Context,
-	op func(ctx context.Context, repo port.ApplicationRepository, tc port.ApplicationTransferClient, rc port.ApplicationRegistrationClient) error,
+	op func(ctx context.Context, repo port.Repository, tc port.TransferClient, rc port.RegistrationClient) error,
 ) error {
 	// BeginTx
 	// defer te.tx.Commit()

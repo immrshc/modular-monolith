@@ -10,7 +10,7 @@ type Transfer struct {
 	atu port.AccountTransferUsecase
 }
 
-func NewTransfer(atu port.AccountTransferUsecase) *Transfer{
+func NewTransfer(atu port.AccountTransferUsecase) *Transfer {
 	return &Transfer{atu: atu}
 }
 

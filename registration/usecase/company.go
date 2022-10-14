@@ -2,7 +2,7 @@ package usecase
 
 import "github.com/immrshc/modular-monolith/registration/entity"
 
-type Company struct {}
+type Company struct{}
 
 func NewCompany() *Company {
 	return &Company{}
