@@ -30,6 +30,7 @@ func (c *ClientBuilder) NewClient(db interface{}) *Client {
 }
 
 func (c *Client) GetCompany(ctx context.Context, id int64) *entity.Company {
+	// 事業所・申込モジュールの関数呼び出し
 	com := c.registration.GetCompany(ctx, id)
 	// registrationのモデルをworkflowのモデルに変換する
 	return &entity.Company{ID: com.ID}

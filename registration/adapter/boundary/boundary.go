@@ -16,5 +16,6 @@ func NewRegistration(cu port.CompanyUsecase) *Registration {
 }
 
 func (r *Registration) GetCompany(ctx context.Context, id int64) *entity.Company {
+	// 自身のモジュール内のユースケースを呼び出す
 	return r.cu.GetCompany()
 }

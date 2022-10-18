@@ -19,6 +19,8 @@ func NewTransferApplication(repo port.Repository, tc port.TransferClient,
 }
 
 func (ta *TransferApplication) GetApplication(ctx context.Context, id int64) error {
+	// ユースケース層の実装
+	// ...
 	ta.rc.GetCompany(ctx, id)
 	return nil
 }
